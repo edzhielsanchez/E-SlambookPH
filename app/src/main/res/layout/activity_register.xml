@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#AEF9EFFA"
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/imagebgreg"
-        android:layout_width="411dp"
-        android:layout_height="915dp"
-        android:src="@drawable/bg"
+        android:id="@+id/imageView3"
+        android:layout_width="444dp"
+        android:layout_height="907dp"
+        android:src="@drawable/bg_all2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg" />
+        app:srcCompat="@drawable/bg_all2" />
 
     <ImageView
         android:id="@+id/imageLogo2"
@@ -33,34 +33,20 @@
 
     <TextView
         android:id="@+id/textCreateNew"
-        android:layout_width="250dp"
-        android:layout_height="116dp"
+        android:layout_width="411dp"
+        android:layout_height="58dp"
         android:fontFamily="@font/poppins_extrabold"
-        android:text="Create New"
+        android:text="Create New Account"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="33sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageLogo2"
-        app:layout_constraintVertical_bias="0.04" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_extrabold"
-        android:text="Account"
-        android:textColor="#000000"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textCreateNew"
-        app:layout_constraintEnd_toEndOf="@+id/textCreateNew"
-        app:layout_constraintStart_toStartOf="@+id/textCreateNew"
-        app:layout_constraintTop_toTopOf="@+id/textCreateNew"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.017" />
 
     <ImageView
         android:id="@+id/imageName"
@@ -180,10 +166,25 @@
         app:layout_constraintEnd_toEndOf="@+id/imagePassword2"
         app:layout_constraintTop_toTopOf="@+id/imagePassword2" />
 
+    <ImageView
+        android:id="@+id/imageRetype"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/retype"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePassword2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/retype" />
+
     <EditText
         android:id="@+id/editRetypePassword"
-        android:layout_width="257dp"
-        android:layout_height="51dp"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
         android:backgroundTint="#00FFFFFF"
         android:ems="10"
         android:hint="Re-type Passsword"
@@ -192,18 +193,18 @@
         android:textColorHint="#707071"
         android:textColorLink="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagePassword2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRetype"
+        app:layout_constraintEnd_toEndOf="@+id/imageRetype"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/imageRetype"
+        app:layout_constraintTop_toTopOf="@+id/imageRetype"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="335dp"
         android:layout_height="55dp"
-        android:backgroundTint="#2A3950"
+        android:backgroundTint="#556171"
         android:fontFamily="@font/poppins"
         android:text="Register"
         android:textAlignment="center"
@@ -214,6 +215,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagePassword2"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="0.815" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

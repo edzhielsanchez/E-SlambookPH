@@ -4,30 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2A3950"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imagebgmain"
-        android:layout_width="411dp"
-        android:layout_height="915dp"
-        android:src="@drawable/bg"
+        android:id="@+id/imageView2"
+        android:layout_width="453dp"
+        android:layout_height="908dp"
+        android:src="@drawable/bg_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg" />
+        app:srcCompat="@drawable/bg_home" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="188dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#ADB6C3"
+        android:text="Create Slam"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ADB6C3"
+        android:text="View Entry"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Home Page"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:layout_width="297dp"
+        android:layout_height="118dp"
+        android:layout_gravity="right"
+        android:fontFamily="cursive"
+        android:text="Welcome to E-SlambookPH"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
